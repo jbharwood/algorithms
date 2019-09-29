@@ -18,7 +18,7 @@ function isValid(s) {
       prev = counter[Object.keys(counter)[i]]
     } else if (prev !== counter[Object.keys(counter)[i]] &&
         counter[Object.keys(counter)[i]]-1  === prev) {
-          //check for if the count is equal to the normal count - 1
+          //check for if the count is equal to the normal count - 1.
     }
     else if (prev !== counter[Object.keys(counter)[i]] &&
         counter[Object.keys(counter)[i]]-1  === 0) {
