@@ -44,8 +44,13 @@ function commonChild(s1, s2) {
   })
 
   console.log(counter);
-  for (var i = 0; i < .length; i++) {
-    [i]
+  for (var i = 0; i < counter.length; i++) {
+    for (var x = 0; x < arrA.length; x++) {
+      arrA[x]
+    }
+    for (var y = 0; y < arrB.length; y++) {
+      arrB[y]
+    }
   }
   // Object.keys(counter).forEach(k => {
   //   if (counter[k] !== 0) {
