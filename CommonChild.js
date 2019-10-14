@@ -52,11 +52,11 @@ function commonChild(s1, s2) {
       arrB[y]
     }
   }
-  Object.keys(counter).forEach(k => {
-    if (counter[k] !== 0) {
-        total += Math.abs(counter[k]);
-    }
-  })
+  // Object.keys(counter).forEach(k => {
+  //   if (counter[k] !== 0) {
+  //       total += Math.abs(counter[k]);
+  //   }
+  // })
 }
 
 console.log(commonChild("ABCD", "ABDC") + ": 3");
