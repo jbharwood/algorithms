@@ -13,6 +13,6 @@ var subarraySum = function(nums, k) {
     return solution;
 };
 
-// console.log(subarraySum([1,1,1], 2));
+console.log(subarraySum([1,1,1], 2));
 console.log(subarraySum([1,2,3], 3));
 console.log(subarraySum([100,1,2,3,4], 6));
