@@ -25,3 +25,5 @@ describe 'clock hands' do
     end
   end
 end
+
+puts hand_angle(1,30)
