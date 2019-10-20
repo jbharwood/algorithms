@@ -27,3 +27,7 @@ describe 'clock hands' do
 end
 
 puts hand_angle(1,30)
+puts hand_angle(3,15)
+puts hand_angle(6,50)
+puts hand_angle(8,15)
+puts hand_angle(11,1)
