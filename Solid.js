@@ -27,45 +27,45 @@
 //
 // console.log(mainMenu());
 
-// const sandwiches = ['turkey', 'ham'];
-// const sandwichMaker = {
-//   makeSandwich(sandwich) {
-//     if (sandwiches.indexOf(sandwich) > -1) {
-//       console.log('You made a sandwich!');
-//     } else {
-//       console.log(`You don't get a sandwich!`);
-//     }
-//   },
-//   addSandwich(sandwich) {
-//     sandwiches.push(sandwich);
-//   },
-// };
-//
-// const openDeli = () => {
-//   sandwichMaker.makeSandwich("turkey")
-//   sandwichMaker.addSandwich("roast beef")
-//   return sandwiches
-// }
-// console.log(openDeli());
-//
-const iceCreams = ['vanilla', 'chocolate'];
-const iceCreamMaker = {
-  makeIceCream(iceCream) {
-    if (iceCreams.indexOf(iceCream) > -1) {
-      console.log('You made a iceCream!');
+const sandwiches = ['turkey', 'ham'];
+const sandwichMaker = {
+  makeSandwich(sandwich) {
+    if (sandwiches.indexOf(sandwich) > -1) {
+      console.log('You made a sandwich!');
     } else {
-      console.log(`You don't get a iceCream!`);
+      console.log(`You don't get a sandwich!`);
     }
   },
-  addIceCream(iceCream) {
-    iceCreams.push(iceCream);
+  addSandwich(sandwich) {
+    sandwiches.push(sandwich);
   },
 };
-const openIceCreamStore = () => {
-  iceCreams.addIceCream("rocky road")
-  iceCreamMaker.makeIceCream("vanilla")
-  return iceCreams
+
+const openDeli = () => {
+  sandwichMaker.makeSandwich("turkey")
+  sandwichMaker.addSandwich("roast beef")
+  return sandwiches
 }
+console.log(openDeli());
+//
+// const iceCreams = ['vanilla', 'chocolate'];
+// const iceCreamMaker = {
+//   makeIceCream(iceCream) {
+//     if (iceCreams.indexOf(iceCream) > -1) {
+//       console.log('You made a iceCream!');
+//     } else {
+//       console.log(`You don't get a iceCream!`);
+//     }
+//   },
+//   addIceCream(iceCream) {
+//     iceCreams.push(iceCream);
+//   },
+// };
+// const openIceCreamStore = () => {
+//   iceCreams.addIceCream("rocky road")
+//   iceCreamMaker.makeIceCream("vanilla")
+//   return iceCreams
+// }
 
 let stock = [];
 const itemMaker = {
