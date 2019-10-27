@@ -1,52 +1,52 @@
-// const login = () => {
-//   console.log("Enter Username:");
-// }
-//
-// const password = () => {
-//   console.log("Enter Password:");
-// }
-//
-// const mainMenu = () => {
-//   login()
-//   password()
-// }
-//
-// const playGame = () => {
-//   console.log("Start Game");
-// }
-//
-// const startGame = () => {
-//   mainMenu()
-//   playGame()
-// }
-//
-// const mainMenu = () => {
-//   console.log("Enter Username:");
-//   console.log("Enter Password:");
-// }
-//
-// console.log(mainMenu());
-
-const sandwiches = ['turkey', 'ham'];
-const sandwichMaker = {
-  makeSandwich(sandwich) {
-    if (sandwiches.indexOf(sandwich) > -1) {
-      console.log('You made a sandwich!');
-    } else {
-      console.log(`You don't get a sandwich!`);
-    }
-  },
-  addSandwich(sandwich) {
-    sandwiches.push(sandwich);
-  },
-};
-
-const openDeli = () => {
-  sandwichMaker.makeSandwich("turkey")
-  sandwichMaker.addSandwich("roast beef")
-  return sandwiches
+const login = () => {
+  console.log("Enter Username:");
 }
-console.log(openDeli());
+
+const password = () => {
+  console.log("Enter Password:");
+}
+
+const mainMenu = () => {
+  login()
+  password()
+}
+
+const playGame = () => {
+  console.log("Start Game");
+}
+
+const startGame = () => {
+  mainMenu()
+  playGame()
+}
+
+const mainMenu = () => {
+  console.log("Enter Username:");
+  console.log("Enter Password:");
+}
+
+console.log(mainMenu());
+
+// const sandwiches = ['turkey', 'ham'];
+// const sandwichMaker = {
+//   makeSandwich(sandwich) {
+//     if (sandwiches.indexOf(sandwich) > -1) {
+//       console.log('You made a sandwich!');
+//     } else {
+//       console.log(`You don't get a sandwich!`);
+//     }
+//   },
+//   addSandwich(sandwich) {
+//     sandwiches.push(sandwich);
+//   },
+// };
+//
+// const openDeli = () => {
+//   sandwichMaker.makeSandwich("turkey")
+//   sandwichMaker.addSandwich("roast beef")
+//   return sandwiches
+// }
+// console.log(openDeli());
 //
 // const iceCreams = ['vanilla', 'chocolate'];
 // const iceCreamMaker = {
