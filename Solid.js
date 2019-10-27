@@ -48,24 +48,24 @@
 // }
 // console.log(openDeli());
 //
-// const iceCreams = ['vanilla', 'chocolate'];
-// const iceCreamMaker = {
-//   makeIceCream(iceCream) {
-//     if (iceCreams.indexOf(iceCream) > -1) {
-//       console.log('You made a iceCream!');
-//     } else {
-//       console.log(`You don't get a iceCream!`);
-//     }
-//   },
-//   addIceCream(iceCream) {
-//     iceCreams.push(iceCream);
-//   },
-// };
-// const openIceCreamStore = () => {
-//   iceCreams.addIceCream("rocky road")
-//   iceCreamMaker.makeIceCream("vanilla")
-//   return iceCreams
-// }
+const iceCreams = ['vanilla', 'chocolate'];
+const iceCreamMaker = {
+  makeIceCream(iceCream) {
+    if (iceCreams.indexOf(iceCream) > -1) {
+      console.log('You made a iceCream!');
+    } else {
+      console.log(`You don't get a iceCream!`);
+    }
+  },
+  addIceCream(iceCream) {
+    iceCreams.push(iceCream);
+  },
+};
+const openIceCreamStore = () => {
+  iceCreams.addIceCream("rocky road")
+  iceCreamMaker.makeIceCream("vanilla")
+  return iceCreams
+}
 
 let stock = [];
 const itemMaker = {
@@ -98,5 +98,6 @@ const openDeli = () => {
   itemMaker.makeItem("sandwich", "turkey")
   return stock
 }
+
 console.log(openIceCreamStore());
 console.log(openDeli());
