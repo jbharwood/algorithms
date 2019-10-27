@@ -1,31 +1,31 @@
-const login = () => {
-  console.log("Enter Username:");
-}
-
-const password = () => {
-  console.log("Enter Password:");
-}
-
-const mainMenu = () => {
-  login()
-  password()
-}
-
-const playGame = () => {
-  console.log("Start Game");
-}
-
-const startGame = () => {
-  mainMenu()
-  playGame()
-}
-
-const mainMenu = () => {
-  console.log("Enter Username:");
-  console.log("Enter Password:");
-}
-
-console.log(mainMenu());
+// const login = () => {
+//   console.log("Enter Username:");
+// }
+//
+// const password = () => {
+//   console.log("Enter Password:");
+// }
+//
+// const mainMenu = () => {
+//   login()
+//   password()
+// }
+//
+// const playGame = () => {
+//   console.log("Start Game");
+// }
+//
+// const startGame = () => {
+//   mainMenu()
+//   playGame()
+// }
+//
+// const mainMenu = () => {
+//   console.log("Enter Username:");
+//   console.log("Enter Password:");
+// }
+//
+// console.log(mainMenu());
 
 // const sandwiches = ['turkey', 'ham'];
 // const sandwichMaker = {
