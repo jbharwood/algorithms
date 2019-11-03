@@ -1,5 +1,5 @@
 function minimumBribes(q) {
-
+  console.log(q);
 }
 
-minimumBribes("")
+minimumBribes(2, 10)
