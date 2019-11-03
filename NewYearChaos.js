@@ -1,0 +1,5 @@
+function minimumBribes(q) {
+
+}
+
+minimumBribes("")
