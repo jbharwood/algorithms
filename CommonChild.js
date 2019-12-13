@@ -61,6 +61,6 @@ function commonChild(s1, s2) {
 
 console.log(commonChild("ABCD", "ABDC") + ": 3");
 console.log(commonChild("HARRY", "SALLY") + ": 2");
-// console.log(commonChild("AA", "BB") + ": 0");
+console.log(commonChild("AA", "BB") + ": 0");
 // console.log(commonChild("SHINCHAN", "NOHARAAA") + ": 3");
 // console.log(commonChild("ABCDEF", "FBDAMN") + ": 2");
