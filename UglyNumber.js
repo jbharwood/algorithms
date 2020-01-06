@@ -10,7 +10,6 @@ var isUgly = function(num) {
   while (num % 5 === 0) {
       num = num / 5;
   }
-  console.log(num);
   return (num === 1);
 };
 
