@@ -1,38 +1,68 @@
 //hackerrank
 function makeAnagram(a, b) {
   let counter = {};
+  let counterA = {};
+  let counterB = {};
   let total = 0;
   let arrA = a.split('')
   let arrB = b.split('')
 
   arrA.forEach(char => {
-    if (counter[char]) {
-      counter[char] = counter[char]
+    if (counterA[char]) {
+      counterA[char]++
     } else {
-      counter[char] = 0
+      counterA[char] = 1
     }
-    counter[char]++;
   })
 
   arrB.forEach(char => {
-    if (counter[char]) {
-      counter[char] = counter[char]
+    if (counterB[char]) {
+      counterB[char]++
     } else {
-      counter[char] = 0
+      counterB[char] = 1
     }
-    counter[char]--;
   })
 
-  console.log(counter);
-  Object.keys(counter).forEach(k => {
-    if (counter[k] !== 0) {
-        total += Math.abs(counter[k]);
+  // console.log(counterA);
+  // console.log(counterB);
+  let bad = true
+  Object.keys(counterA).forEach(k => {
+    console.log(k);
+    if (counterA[k] !== counterB[k]) {
+      bad = false
     }
   })
+  return bad
+  //
+  // arrA.forEach(char => {
+  //   if (counter[char]) {
+  //     counter[char] = counter[char]
+  //   } else {
+  //     counter[char] = 0
+  //   }
+  //   counter[char]++;
+  // })
+  //
+  // arrB.forEach(char => {
+  //   if (counter[char]) {
+  //     counter[char] = counter[char]
+  //   } else {
+  //     counter[char] = 0
+  //   }
+  //   counter[char]--;
+  // })
+  //
+  // console.log(counter);
+  // Object.keys(counter).forEach(k => {
+  //   if (counter[k] !== 0) {
+  //       total += Math.abs(counter[k]);
+  //   }
+  // })
 
   return total;
 }
 
+console.log(makeAnagram("abc", "cab"));
 console.log(makeAnagram("cdex", "abcx"));
 console.log(makeAnagram("cde", "abc"));
 console.log(makeAnagram("fcrxzwscanmligyxyvym", "jxwtrhvujlmrpdoqbisbwhmgpmeoke"));
