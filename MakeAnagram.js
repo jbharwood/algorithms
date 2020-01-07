@@ -25,14 +25,14 @@ function makeAnagram(a, b) {
 
   // console.log(counterA);
   // console.log(counterB);
-  let bad = true
+  let anagram = true
   Object.keys(counterA).forEach(k => {
     console.log(k);
     if (counterA[k] !== counterB[k]) {
-      bad = false
+      anagram = false
     }
   })
-  return bad
+  return anagram
   //
   // arrA.forEach(char => {
   //   if (counter[char]) {
