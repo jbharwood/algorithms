@@ -27,7 +27,6 @@ function makeAnagram(a, b) {
   // console.log(counterB);
   let anagram = true
   Object.keys(counterA).forEach(k => {
-    console.log(k);
     if (counterA[k] !== counterB[k]) {
       anagram = false
     }
