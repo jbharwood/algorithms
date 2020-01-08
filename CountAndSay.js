@@ -9,25 +9,25 @@ var countAndSay = function(n) {
   let count;
 
   for (let i = 1; i < n; i++) {
-      current_num = previous_sequence.charAt(0);
-      count = 1;
-      current_sequence = "";
+    current_num = previous_sequence.charAt(0);
+    count = 1;
+    current_sequence = "";
 
-      let compare_num;
+    let compare_num;
 
-      for (let j = 1; j < previous_sequence.length; j++) {
-        compare_num = previous_sequence.charAt(j);
-        if (compare_num !== current_num) {
-          current_sequence += `${count}${current_num}`;
-          current_num = compare_num;
-          count = 1;
-        } else {
-          count++;
-        }
+    for (let j = 1; j < previous_sequence.length; j++) {
+      compare_num = previous_sequence.charAt(j);
+      if (compare_num !== current_num) {
+        current_sequence += `${count}${current_num}`;
+        current_num = compare_num;
+        count = 1;
+      } else {
+        count++;
       }
+    }
 
-      current_sequence += `${count}${current_num}`;
-      previous_sequence = current_sequence;
+    current_sequence += `${count}${current_num}`;
+    previous_sequence = current_sequence;
   }
 
   return previous_sequence;
