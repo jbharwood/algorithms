@@ -1,0 +1,24 @@
+var majorityElement = function(nums) {
+  let count = {}
+  nums.forEach((num) => {
+    if (count[num]) {
+      count[num]++
+    } else {
+      count[num] = 1
+    }
+  })
+
+  let ans = null
+  let max = 0
+  for(let key in count) {
+    if (count[key] > max) {
+      max = count[key]
+      ans = key
+    }
+  }
+  return ans
+};
+
+console.log(majorityElement([3,2,3]));
+console.log(majorityElement([2,2,1,1,1,2,2]));
+console.log(majorityElement([3,3,4]));
