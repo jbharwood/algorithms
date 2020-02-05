@@ -1,6 +1,6 @@
 var isIsomorphic = function(s, t) {
   if (s === t) return true;
-  const lens= s.length;
+  const lens = s.length;
   let i = 1;
   if (lens !== t.length) return false;
   while (i < lens) {

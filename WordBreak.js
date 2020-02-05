@@ -7,12 +7,12 @@ var wordBreak = function(s, wordDict) {
   let t = [];
 
   for (let i = 0; i < s.length; i++) {
-      for (let j = 0; j <= i; j++) {
-        let word = s.slice(j, i + 1);
-        if (wordDict.includes(word) && (j == 0 || t[j-1] == true )) {
-            t[i] = true;
-        }
+    for (let j = 0; j <= i; j++) {
+      let word = s.slice(j, i + 1);
+      if (wordDict.includes(word) && (j == 0 || t[j-1] == true )) {
+          t[i] = true;
       }
+    }
   }
   return t[s.length - 1] || false;
 };
