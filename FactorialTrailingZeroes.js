@@ -1,5 +1,5 @@
 var trailingZeroes = function(n) {
-  var totalZeros = 0;
+  let totalZeros = 0;
 
   while(n > 0) {
     n = Math.floor(n/5); //Ex: if n = (125); (125) / 5 = {25} ; (25)/5 = {5} ; (5)/5 = {1} ; totalZeros = 25 + 5 + 1 = 31;
