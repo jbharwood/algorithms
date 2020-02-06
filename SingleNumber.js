@@ -11,3 +11,12 @@ var singleNumber = function(nums) {
 
 console.log(singleNumber([2,2,1]));
 console.log(singleNumber([2,2,1,1,3]));
+
+// Example 1:
+//
+// Input: [2,2,1]
+// Output: 1
+// Example 2:
+//
+// Input: [4,1,2,1,2]
+// Output: 4

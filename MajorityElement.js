@@ -22,3 +22,12 @@ var majorityElement = function(nums) {
 console.log(majorityElement([3,2,3]));
 console.log(majorityElement([2,2,1,1,1,2,2]));
 console.log(majorityElement([3,3,4]));
+
+// Example 1:
+//
+// Input: [3,2,3]
+// Output: 3
+// Example 2:
+//
+// Input: [2,2,1,1,1,2,2]
+// Output: 2
