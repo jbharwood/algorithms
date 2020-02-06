@@ -1,10 +1,10 @@
 var findNumbers = function(nums) {
-    let evens = 0
-    nums.forEach(num => {
-        let str = num.toString()
-        if (str.length % 2 === 0) evens++
-    })
-    return evens
+  let evens = 0
+  nums.forEach(num => {
+    let str = num.toString()
+    if (str.length % 2 === 0) evens++
+  })
+  return evens
 };
 
 console.log(findNumbers([12,345,2,6,7896]));

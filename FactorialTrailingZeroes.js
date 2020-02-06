@@ -11,3 +11,14 @@ var trailingZeroes = function(n) {
 console.log(trailingZeroes(3));
 console.log(trailingZeroes(5));
 console.log(trailingZeroes(7));
+
+// Example 1:
+//
+// Input: 3
+// Output: 0
+// Explanation: 3! = 6, no trailing zero.
+// Example 2:
+//
+// Input: 5
+// Output: 1
+// Explanation: 5! = 120, one trailing zero.
