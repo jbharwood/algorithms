@@ -1,26 +1,26 @@
 var countCharacters = function(words, chars) {
-    let charCount = {}
-    let ans = 0
-    chars.split("").forEach(a => charCount[a] ? charCount[a]++ : charCount[a] = 1)
-    words.forEach(a => {
-        let aArr = a.split("")
-        let check = true
-        let count = {}
-        aArr.forEach(a => count[a] ? count[a]++ : count[a] = 1)
-        aArr.forEach(b => {
-            if (!charCount[b]) {
-                check = false
-            }
-            if (count[b] > charCount[b]) {
-                check = false
-            }
-        })
-        if (check === true) {
-            ans += a.length
-        }
+  let charCount = {}
+  let ans = 0
+  chars.split("").forEach(a => charCount[a] ? charCount[a]++ : charCount[a] = 1)
+  words.forEach(a => {
+    let aArr = a.split("")
+    let check = true
+    let count = {}
+    aArr.forEach(a => count[a] ? count[a]++ : count[a] = 1)
+    aArr.forEach(b => {
+      if (!charCount[b]) {
+        check = false
+      }
+      if (count[b] > charCount[b]) {
+        check = false
+      }
     })
-    return ans
-};
+    if (check === true) {
+      ans += a.length
+    }
+  })
+  return ans
+};f
 
 console.log(countCharacters(["cat","bt","hat","tree"], "atach"));
 console.log(countCharacters(["hello","world","leetcode"], "welldonehoneyr"));
