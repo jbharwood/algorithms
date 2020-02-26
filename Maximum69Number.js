@@ -1,16 +1,16 @@
 var maximum69Number  = function(num) {
   let max = 0, og = num, str = num.toString()
   for (let i = 0; i < str.length; i++) {
-      let s = str.split("")
-      if (s[i] === "6") {
-          s.splice(i, 1, "9")
-      } else {
-          s.splice(i, 1, "6")
-      }
-      num = parseInt(s.join(""))
-      if (num > max) {
-          max = num
-      }
+    let s = str.split("")
+    if (s[i] === "6") {
+      s.splice(i, 1, "9")
+    } else {
+      s.splice(i, 1, "6")
+    }
+    num = parseInt(s.join(""))
+    if (num > max) {
+      max = num
+    }
   }
   console.log(num);
   console.log(og);
