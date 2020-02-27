@@ -10,7 +10,7 @@ RecentCounter.prototype.ping = function(t) {
   this.queue.push(t);
   // keep pings within 3000 from the latest ping
   while(this.queue[0] < t - 3000) {
-      this.queue.shift();
+    this.queue.shift();
   }
   return this.queue.length;
 };
