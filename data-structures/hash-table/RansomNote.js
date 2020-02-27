@@ -1,21 +1,21 @@
 //hackerrank interview prep kit
 
 function checkMagazine(magazine, note) {
-    var map = { };
-    var replicable = true;
-    for ( var i of magazine ) {
-        map[i] = (map[i] || 0) + 1;
+  var map = { };
+  var replicable = true;
+  for ( var i of magazine ) {
+    map[i] = (map[i] || 0) + 1;
+  }
+  for ( var i of note ) {
+    map[i] = (map[i] || 0) - 1;
+  }
+  for ( var i in map ) {
+    if ( map[i] < 0 ) {
+      replicable = false;
+      break;
     }
-    for ( var i of note ) {
-        map[i] = (map[i] || 0) - 1;
-    }
-    for ( var i in map ) {
-        if ( map[i] < 0 ) {
-            replicable = false;
-            break;
-        }
-    }
-    console.log(replicable ? 'Yes' : 'No');
+  }
+  console.log(replicable ? 'Yes' : 'No');
 }
 
 // Breaking down the part that is probably confusing some people: (map[i] || 0) + 1
@@ -53,7 +53,7 @@ function checkMagazine(magazine, note) {
 // ive got a lovely bunch of coconuts
 // ive got some coconuts
 // Sample Output 2
-// 
+//
 // No
 // Explanation 2
 //
