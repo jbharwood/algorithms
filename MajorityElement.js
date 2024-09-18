@@ -1,12 +1,6 @@
 var majorityElement = function(nums) {
   let count = {}
-  nums.forEach((num) => {
-    if (count[num]) {
-      count[num]++
-    } else {
-      count[num] = 1
-    }
-  })
+  nums.forEach((num) => count[num] ? count[num]++ : count[num] = 1)
 
   let ans = null
   let max = 0

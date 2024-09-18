@@ -32,6 +32,7 @@ function commonChild(s1, s2) {
       counter[char] = 0
     }
     counter[char]++;
+    // counter[char] = counter[char] ? counter[char] + 1 : 1
   })
 
   arrB.forEach(char => {
@@ -41,25 +42,28 @@ function commonChild(s1, s2) {
       counter[char] = 0
     }
     counter[char]--;
+    // counter[char] = counter[char] ? counter[char] - 1 : counter[char]
   })
 
   console.log(counter);
-  for (var i = 0; i < counter.length; i++) {
-    for (var x = 0; x < arrA.length; x++) {
-      arrA[x]
-    }
-    for (var y = 0; y < arrB.length; y++) {
-      arrB[y]
-    }
-  }
-  // Object.keys(counter).forEach(k => {
-  //   if (counter[k] !== 0) {
-  //       total += Math.abs(counter[k]);
+  // for (var i = 0; i < counter.length; i++) {
+  //   for (var x = 0; x < arrA.length; x++) {
+  //     arrA[x]
   //   }
-  // })
+  //   for (var y = 0; y < arrB.length; y++) {
+  //     arrB[y]
+  //   }
+  // }
+  Object.keys(counter).forEach(k => {
+    if (counter[k] === 0) {
+        total += Math.abs(counter[k]);
+    }
+  })
+
+  return total;
 }
 
-console.log(commonChild("ABCD", "ABDC") + ": 3");
+console.log(commonChild("ABCD", "ABDC") + ": 4");
 console.log(commonChild("HARRY", "SALLY") + ": 2");
 console.log(commonChild("AA", "BB") + ": 0");
 // console.log(commonChild("SHINCHAN", "NOHARAAA") + ": 3");

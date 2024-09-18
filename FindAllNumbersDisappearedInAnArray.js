@@ -1,10 +1,10 @@
 var findDisappearedNumbers = function(nums) {
-  let obj = {};
+  	let obj = {};
 	let dis = [];
 	for (let v of nums) {
-    if (!obj[v]) {
-      obj[v] = v;
-    }
+		if (!obj[v]) {
+			obj[v] = v;
+		}
 	}
 	for (let i = 1; i <= nums.length; i++) {
 		if (!obj[i]) dis.push(i);

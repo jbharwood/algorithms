@@ -8,6 +8,7 @@ var climbStairs = function(n) {
   }
   console.log("a: " + a);
   console.log("b: " + b);
+  console.log("next: " + next);
   return n === 1 ? a : b;
 };
 

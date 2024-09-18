@@ -5,8 +5,8 @@ var intersect = function(nums1, nums2) {
     hash[num] ? hash[num]++ : hash[num] = 1
   })
 
-  for (let i = 0; i < nums1.length; i++){
-    if (hash[nums1[i]] > 0){
+  for (let i = 0; i < nums1.length; i++) {
+    if (hash[nums1[i]] > 0) {
       ar.push(nums1[i])
       hash[nums1[i]]--
     }

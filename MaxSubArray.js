@@ -5,7 +5,7 @@
 var maxSubArray = function(nums) {
   let cur = nums[0];
   let res = nums[0];
-  for (let i = 1; i < nums.length; i++){
+  for (let i = 1; i < nums.length; i++) {
     if (cur < 0) {
       cur = nums[i];
     }

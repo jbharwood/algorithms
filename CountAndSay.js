@@ -35,6 +35,8 @@ var countAndSay = function(n) {
 
 console.log(countAndSay(1));
 console.log(countAndSay(4));
+console.log(countAndSay(3));
+console.log(countAndSay(5));
 
 // Example 1:
 //

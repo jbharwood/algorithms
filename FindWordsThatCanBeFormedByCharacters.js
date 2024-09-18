@@ -20,7 +20,7 @@ var countCharacters = function(words, chars) {
     }
   })
   return ans
-};f
+};
 
 console.log(countCharacters(["cat","bt","hat","tree"], "atach"));
 console.log(countCharacters(["hello","world","leetcode"], "welldonehoneyr"));
