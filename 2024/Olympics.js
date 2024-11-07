@@ -20,6 +20,7 @@
 const leaderboard = [
     {country: "USA", bronze: 0, silver: 0, gold: 0, total: 0},
     {country: "China", bronze: 0, silver: 0, gold: 0, total: 0},
+    {country: "Germany", bronze: 0, silver: 0, gold: 0, total: 0},
 ]
 
 function displayLeaderboard() {
@@ -29,8 +30,8 @@ function displayLeaderboard() {
 function addMedals(leaderboardItem) {
     const { country, bronze, silver, gold } = leaderboardItem
     
-    if (!country || !bronze || !silver || !gold) {
-        return "Incorrect leaderboardItem"
+    if (!country) {
+        return "Country is needed"
     }
     
     let res
@@ -81,6 +82,8 @@ function sortLeaderboard() {
 
 console.log(addMedals({country: "USA", bronze: 1, silver: 3, gold: 3}))
 console.log(addMedals({country: "China", bronze: 2, silver: 3, gold: 3}))
+console.log(addMedals({country: "Germany", bronze: 2, silver: 3, gold: 0}))
+
 console.log("sorted", displayLeaderboard())
 
 
