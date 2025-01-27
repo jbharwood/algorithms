@@ -1,3 +1,6 @@
+// Time Complexity: O(n) - We iterate through both strings once.
+// Space Complexity: O(1) - The hash table will contain at most 26 characters.
+
 class Solution {
   isAnagram(s, t) {
     if (s.length !== t.length) return false;

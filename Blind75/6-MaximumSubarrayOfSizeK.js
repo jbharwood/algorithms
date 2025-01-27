@@ -1,3 +1,6 @@
+// Time Complexity: O(n) - We iterate through the array once.
+// Space Complexity: O(1) - We use a constant amount of extra space.
+
 class Solution {
   findMaxSumSubArray(k, arr) {
     let res = 0,

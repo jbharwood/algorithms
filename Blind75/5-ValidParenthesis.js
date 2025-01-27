@@ -1,3 +1,6 @@
+// Time Complexity: O(n) - We iterate through the string once.
+// Space Complexity: O(n) - In the worst case, the stack will contain all opening brackets.
+
 class Solution {
   isValid(s) {
     let stack = [];

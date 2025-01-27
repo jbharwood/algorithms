@@ -1,3 +1,6 @@
+// Time Complexity: O(n), where n is the number of elements in the input array.
+// Space Complexity: O(n), as we store up to n elements in the set.
+
 class Solution {
   containsDuplicate(nums) {
     let set = new Set();

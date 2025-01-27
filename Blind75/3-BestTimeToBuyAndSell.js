@@ -1,3 +1,6 @@
+// Time Complexity: O(n) - We iterate through the prices array once.
+// Space Complexity: O(1) - We use a constant amount of extra space.
+
 class Solution {
   maxProfit(prices) {
     let min = Infinity;

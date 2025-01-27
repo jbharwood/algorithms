@@ -1,10 +1,13 @@
+// Time complexity: O(n)
+// Space complexity: O(n)
+
 class Solution {
   twoSum(nums, target) {
     let res = {};
     for (let i = 0; i < nums.length; i++) {
       let diff = target - nums[i];
 
-      if (res[diff] !== undefined) {
+      if (res[diff]) {
         return [res[diff], i];
       }
 
