@@ -7,7 +7,7 @@ class Solution {
     for (let i = 0; i < nums.length; i++) {
       let diff = target - nums[i];
 
-      if (res[diff]) {
+      if (res[diff] !== undefined) {
         return [res[diff], i];
       }
 
